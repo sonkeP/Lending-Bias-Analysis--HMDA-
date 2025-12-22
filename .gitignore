@@ -1,0 +1,20 @@
+# virtual environment
+venv/
+
+# data files
+data/raw/
+data/clean/
+data/analytics/
+
+# outputs
+outputs/
+
+# notebooks
+.ipynb_checkpoints/
+
+# system files
+.DS_Store
+Thumbs.db
+
+#parquet files
+*.parquet
