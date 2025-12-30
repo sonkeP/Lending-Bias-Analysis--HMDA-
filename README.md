@@ -33,7 +33,8 @@ https://data.census.gov/
 ## Status
 - Week 1: Data ingestion & cleaning ✅
 - Week 2: ETL pipeline & analytics layer (local-first) ✅
-- Week 3+: In progress
+- Week 3: Exploratory Data Analysis & Bias Measurement
+- week 4: Predictive Modeling & Fairness Analysis
 
 ## How to Run
 1. Create a Python virtual environment
