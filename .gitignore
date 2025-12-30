@@ -7,7 +7,7 @@ data/clean/
 data/analytics/
 
 # outputs
-outputs/
+# outputs/
 
 # notebooks
 .ipynb_checkpoints/
