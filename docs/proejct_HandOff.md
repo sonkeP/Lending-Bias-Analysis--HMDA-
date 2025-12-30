@@ -94,9 +94,8 @@ Gender is treated as an observed attribute, not an assumed source of bias.
 ├── docs/
 │   ├── PROJECT_HANDOFF.md
 │   ├── data_dictionary.md
-│   └── architecture.md
+│   ├── Data Availability & Reproducibility.md
 │
-├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
