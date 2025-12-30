@@ -62,40 +62,44 @@ Gender is treated as an observed attribute, not an assumed source of bias.
 
 ## 5. Project Structure
 ### Lending Bias Analysis (HMDA)/
-│
+## Project Directory Structure
+
+```text
+.
 ├── data/
-│ ├── clean/ (gitignored, not uploaded)
-│ ├── analytics/ (gitignored, not uploaded)
+│   ├── clean/                 # Gitignored (not uploaded)
+│   └── analytics/             # Gitignored (not uploaded)
 │
 ├── outputs/
-│ ├── dq_logs/
-│ ├── summary_tables/
-│ └── final/
-│ └── csv/ (Power BI-ready exports)
+│   ├── dq_logs/               # Data quality logs
+│   ├── summary_tables/        # Intermediate and summary tables
+│   └── final/
+│       └── csv/               # Power BI–ready exports
 │
 ├── src/
-│ ├── etl/
-│ │ └── build_analytics_2023.py
-│ └── analysis/
-│ ├── build_final_outputs.py
-│ └── export_final_csvs.py
+│   ├── etl/
+│   │   └── build_analytics_2023.py
+│   └── analysis/
+│       ├── build_final_outputs.py
+│       └── export_final_csvs.py
 │
 ├── notebooks/
-│ ├── 01_ingestion_cleaning.ipynb
-│ ├── 02_summary_stats.ipynb
-│ ├── 03_income_bucketing.ipynb
-│ ├── 04_sanity_check_analytics.ipynb
-│ ├── 05_loan_purpose_control.ipynb
-│ └── 06_bias_analysis.ipynb
+│   ├── 01_ingestion_cleaning.ipynb
+│   ├── 02_summary_stats.ipynb
+│   ├── 03_income_bucketing.ipynb
+│   ├── 04_sanity_check_analytics.ipynb
+│   ├── 05_loan_purpose_control.ipynb
+│   └── 06_bias_analysis.ipynb
 │
 ├── docs/
-│ ├── PROJECT_HANDOFF.md
-│ ├── data_dictionary.md
-│ └── architecture.md
+│   ├── PROJECT_HANDOFF.md
+│   ├── data_dictionary.md
+│   └── architecture.md
 │
 ├── requirements.txt
 ├── README.md
-└── .gitignoreKey Actions
+└── .gitignore
+```
 - Chunked ingestion of HMDA 2023 (200k rows per chunk)
 - Standardized applicant gender
 - Removed unknown gender values
